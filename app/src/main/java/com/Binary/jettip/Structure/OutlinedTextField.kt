@@ -1,5 +1,6 @@
 package com.Binary.jettip.Structure
 
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
@@ -53,7 +54,8 @@ fun InputField(
             fontSize = 18.sp,
            color = MaterialTheme.colorScheme.onBackground
         ),
-        modifier = modifier.padding(bottom= 5.dp, start = 5.dp,end = 5.dp),
+        modifier = modifier.padding(all = 4.dp)
+            .fillMaxWidth(),
         enabled = enabled,
         keyboardOptions = KeyboardOptions(keyboardType = keyBoardType,
             imeAction = imeAction),
